@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC - Состав</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .member-card {
+            background: rgba(255, 215, 0, 0.1); 
+            padding: 1.5rem; 
+            border-radius: 10px; 
+            border-left: 5px solid var(--secondary);
+            transition: all 0.3s ease;
+        }
+        
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+        }
+        
+        .member-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .former-member {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem; 
+            background: rgba(255, 0, 0, 0.1); 
+            border-left: 3px solid var(--primary); 
+            border-radius: 5px;
+        }
+        
+        .former-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="pulse">
+        <h1>AC/DC</h1>
+        <p>Легендарная рок-группа из Австралии</p>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="index.html">О группе</a></li>
+            <li><a href="albums.html">Альбомы</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="members.html">Состав</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Состав группы -->
+        <section>
+            <h2>Текущий состав</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                <!-- Ангус Янг -->
+                <div class="member-card">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/3229639/pub_62448af89444bc1690cdba19_62448b39aa6b6d4b59113982/scale_1200" alt="Ангус Янг" class="member-img">
+                    <h3 style="color: var(--secondary); margin-top: 0;">Ангус Янг</h3>
+                    <p><strong>Роль:</strong> Соло-гитара</p>
+                    <p><strong>Годы в группе:</strong> 1973-настоящее время</p>
+                    <p>Известен своей энергичной манерой игры и школьной формой. Младший брат Малькольма Янга, сооснователь группы.</p>
+                </div>
+                
+                <!-- Брайан Джонсон -->
+                <div class="member-card">
+                    <img src="https://sun9-64.userapi.com/impg/NRogMlkwR17R9u3D0wzL-xD1XewVBlQlDg0oOA/MXi5Fl4KOTw.jpg?size=900x750&quality=95&sign=bbd89b6a967c7d9ee3a5b5ea67f585c4&c_uniq_tag=m7J2Qm9gPXvHvAhy8WxDO_4uIjZQgfEEt7FuuEnmIqk&type=album" alt="Брайан Джонсон" class="member-img">
+                    <h3 style="color: var(--secondary); margin-top: 0;">Брайан Джонсон</h3>
+                    <p><strong>Роль:</strong> Вокал</p>
+                    <p><strong>Годы в группе:</strong> 1980-2016, 2018-настоящее время</p>
+                    <p>Заменил Бона Скотта после его смерти. Автор культовых вокальных партий в альбоме "Back in Black".</p>
+                </div>
+                
+                <!-- Стиви Янг -->
+                <div class="member-card">
+                    <img src="https://sun9-63.userapi.com/impf/oRitPSsn_zumkjfEvKFHyhU_qR9MhDKIUP9aBw/2jEtcmV1FeA.jpg?size=807x538&quality=96&sign=08a4d0f6c265e64dc6677e59b170eaa0&c_uniq_tag=0O8toExI2ixkMdYr6Ko4XZpgQgJ1r_Y96c492vE0r1w&type=album" alt="Стиви Янг" class="member-img">
+                    <h3 style="color: var(--secondary); margin-top: 0;">Стиви Янг</h3>
+                    <p><strong>Роль:</strong> Ритм-гитара</p>
+                    <p><strong>Годы в группе:</strong> 2014-настоящее время</p>
+                    <p>Племянник основателей группы, заменил Малькольма Янга. Ранее был гастрольным гитаристом группы.</p>
+                </div>
+                
+                <!-- Клифф Уильямс -->
+                <div class="member-card">
+                    <img src="https://sun9-60.userapi.com/impg/fVLSoYD2cdYigggOe-lqZytyHDj65XDgIoVKtg/szVwwDGEkUM.jpg?size=960x794&quality=95&sign=fd06ca9c8be2e229897bf5cdc6a803b7&c_uniq_tag=z0JC9ErjUMQpxMUGccS2PXSs3zLOz_K8qLcjgJbqBpM&type=album" alt="Клифф Уильямс" class="member-img">
+                    <h3 style="color: var(--secondary); margin-top: 0;">Клифф Уильямс</h3>
+                    <p><strong>Роль:</strong> Бас-гитара</p>
+                    <p><strong>Годы в группе:</strong> 1977-2016, 2018-настоящее время</p>
+                    <p>Присоединился к группе во время записи Powerage. Известен своей стабильной и мощной игрой.</p>
+                </div>
+                
+                <!-- Фил Радд -->
+                <div class="member-card">
+                    <img src="https://imagez.tmz.com/image/68/16by9/2014/11/07/68f601eedb4a55eea57b5a52bfb9f0a1_xl.jpg" alt="Фил Радд" class="member-img">
+                    <h3 style="color: var(--secondary); margin-top: 0;">Фил Радд</h3>
+                    <p><strong>Роль:</strong> Ударные</p>
+                    <p><strong>Годы в группе:</strong> 1975-1983, 1994-2015, 2018-настоящее время</p>
+                    <p>Известен своим мощным и ритмичным стилем игры. Участвовал в записи всех классических альбомов.</p>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 3rem;">Бывшие участники</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                <!-- Бон Скотт -->
+                <div class="former-member">
+                    <img src="https://cdn.mos.cms.futurecdn.net/zAYWHWRacaDn2eekLtBuMa-1200-80.jpg" alt="Бон Скотт">
+                    <div>
+                        <strong style="color: var(--primary);">Бон Скотт</strong>
+                        <p>Вокал (1974-1980)</p>
+                        <p>Легендарный вокалист, умер в 1980 году</p>
+                    </div>
+                </div>
+                
+                <!-- Малькольм Янг -->
+                <div class="former-member">
+                    <img src="https://i.pinimg.com/736x/81/8b/76/818b7624bac664ed06fd6f40bfea7be2.jpg" alt="Малькольм Янг">
+                    <div>
+                        <strong style="color: var(--primary);">Малькольм Янг</strong>
+                        <p>Ритм-гитара (1973-2014)</p>
+                        <p>Сооснователь группы, умер в 2017 году</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <p style="font-size: 1.2rem;">&copy; 2023 AC/DC Fan Site. Неофициальный ресурс.</p>
+        <div class="social-links">
+            <a href="https://www.acdc.com" target="_blank">🌐 Официальный сайт</a>
+            <a href="https://youtube.com/acdc" target="_blank">▶️ YouTube</a>
+            <a href="https://open.spotify.com/artist/711MCceyCBcFnzjGY4Q7Un" target="_blank">🎵 Spotify</a>
+            <a href="https://t.me/your_bot_username" target="_blank" class="telegram-icon">Telegram Bot</a>
+        </div>
+    </footer>
+</body>
+</html>
